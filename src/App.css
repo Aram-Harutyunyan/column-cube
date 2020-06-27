@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +36,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+.columns{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-arounds;
+}
+.left{
+  width: 50px;
+  padding: 10px;;
+  height:150px;
+  border: 1px solid black ;
+}
+.right{
+  width: 50px;
+  padding: 10px;;
+  height:150px;
+  border: 1px solid black ;
+}
+p{
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  position: relative;
+  background-color: red;
+}
+h5{
+  position: absolute;
+  margin: 0;
 }
