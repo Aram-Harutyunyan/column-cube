@@ -55,9 +55,9 @@
   height:150px;
   border: 1px solid black ;
 }
-p:not(:empty){
+p{
   cursor: pointer;
-  width: 40px;
+  width: 45px;
   height: 40px;
   border: 1px solid black;
   position: relative;

@@ -8,11 +8,11 @@ class App extends React.Component {
     super()
     this.state={
       up:{
-        left:"Im Here",
-        right:"",
+        left:"Im first",
+        right:"Im second",
       },
       down:{
-        left:"Im Here",
+        left:"Im third",
         right:"",
       },
       
