@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   align-items: center;
+  width:100%;
+  top:200px;
 }
 
 .App-logo {
@@ -41,7 +43,7 @@
   text-align: center;
   align-items: center;
   display: flex;
-  justify-content: space-arounds;
+  justify-content: center;
 }
 .left{
   width: 50px;
@@ -55,8 +57,9 @@
   height:150px;
   border: 1px solid black ;
 }
-p{
+.box{
   cursor: pointer;
+  margin-bottom: 20px;
   width: 45px;
   height: 40px;
   border: 1px solid black;
