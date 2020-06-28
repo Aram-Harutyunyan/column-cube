@@ -55,14 +55,16 @@
   height:150px;
   border: 1px solid black ;
 }
-p{
+p:not(:empty){
   cursor: pointer;
   width: 40px;
   height: 40px;
   border: 1px solid black;
   position: relative;
   background-color: red;
+
 }
+
 h5{
   position: absolute;
   margin: 0;

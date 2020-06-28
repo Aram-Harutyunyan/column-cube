@@ -7,14 +7,32 @@ class App extends React.Component {
   constructor(){
     super()
     this.state={
-      left:"Im Here",
-      right:"",
+      up:{
+        left:"Im Here",
+        right:"",
+      },
+      down:{
+        left:"Im Here",
+        right:"",
+      },
+      
     }
   }
-  changeColumn=()=>{
+
+  changeUp=()=>{
     this.setState({
-      left:[this.state.right],
-      right:[this.state.left],
+      up:{
+        left:this.state.up.right,
+        right:this.state.up.left,
+      }  
+    })
+  }
+  changeDown=()=>{
+    this.setState({
+      down:{
+        left:this.state.down.right,
+        right:this.state.down.left,
+      }
     })
   }
   render(){
@@ -23,10 +41,13 @@ class App extends React.Component {
     <div className="App">
       <div className="columns">
         <div className="left">
-        <AddToColumn position={this.state.left} change={this.changeColumn}/>
+        <AddToColumn position={this.state.up.left} change={this.changeUp}/>
+        <AddToColumn position={this.state.down.left} change={this.changeDown}/>
         </div>
+        
         <div className="right">
-        <AddToColumn position={this.state.right} change={this.changeColumn}/>
+        <AddToColumn position={this.state.up.right} change={this.changeUp}/>
+        <AddToColumn position={this.state.down.right} change={this.changeDown}/>
         </div>
       </div>
       
